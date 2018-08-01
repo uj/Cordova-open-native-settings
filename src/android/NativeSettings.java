@@ -98,6 +98,8 @@ public class NativeSettings extends CordovaPlugin {
             intent = new Intent(android.provider.Settings.ACTION_NFCSHARING_SETTINGS);
         } else if (action.equals("nfc_payment")) {
             intent = new Intent(android.provider.Settings.ACTION_NFC_PAYMENT_SETTINGS);
+        } else if (action.equals("ACTION_CHANNEL_NOTIFICATION_SETTINGS")) {
+            intent = new Intent(android.provider.Settings.ACTION_CHANNEL_NOTIFICATION_SETTINGS);
         } else if (action.equals("nfc_settings")) {
             intent = new Intent(android.provider.Settings.ACTION_NFC_SETTINGS);
         } else if (action.equals("notification_id")) {
